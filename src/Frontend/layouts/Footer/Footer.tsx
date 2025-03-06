@@ -13,7 +13,7 @@ function Footer() {
             <img
               className="max-w-12"
               src={LogoIcon}
-              alt="Logo de LockKey, un candado con una serpiente."
+              alt="Logo de LockKey, un candado con una cabeza de serpiente."
               width={200}
               height={200}
               loading="lazy"
