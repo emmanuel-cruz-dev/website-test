@@ -31,7 +31,7 @@ function Hero() {
           crédito.
         </p>
       </section>
-      <figure className="order-1 md:order-2 w-2/3 md:w-96 mx-auto">
+      <figure className="order-1 md:order-2 w-2/3 md:w-96 mx-auto md:mr-0">
         <img
           className="w-full object-cover custom-drop-shadow"
           src={HeroBanner}

@@ -7,7 +7,7 @@ function AboutUs() {
   return (
     <section className="container">
       <article className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center py-8">
-        <article className="grid grid-cols-2 gap-8 mx-auto">
+        <article className="grid grid-cols-2 gap-8 mx-auto md:ml-0">
           <img
             className="col-span-2 rounded-xl overflow-hidden"
             src={AboutImg1}
