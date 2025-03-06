@@ -84,7 +84,7 @@ function Footer() {
           </form>
         </article>
       </section>
-      <article className="flex justify-between items-center px-6 py-6">
+      <article className="flex justify-between items-center p-6 md:px-10">
         <a
           className="text-4xl footer__link"
           href="https://github.com/No-Country-simulation/equipo-c24-70-ft-webapp"
