@@ -1,5 +1,5 @@
 import LogoIcon from "../../../assets/logo-icon.avif";
-import { FaGithub, FaPhone, FaEnvelope, FaMapMarker } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaMapMarker } from "react-icons/fa";
 import "./Footer.css";
 import SocialIcons from "../../components/SocialIcons/SocialIcons";
 import { Link } from "react-router-dom";
@@ -84,20 +84,20 @@ function Footer() {
           </form>
         </article>
       </section>
-      <article className="flex justify-between items-center p-6 md:px-10">
-        <a
+      <article className="flex justify-center items-center p-6 py-8 md:px-10">
+        {/* <a
           className="text-4xl footer__link"
-          href="https://github.com/No-Country-simulation/equipo-c24-70-ft-webapp"
+          href="https://github.com/No-Country-simulation/equipo-c24-70-ft-webapp/tree/frontend"
           target="_blank"
           rel="noopener noreferrer"
           title="Repositorio de GitHub"
         >
           <FaGithub />
-        </a>
+        </a> */}
         <p className="text-neutral-400 text-center w-2/3 md:w-auto">
           LockKey copyright © 2025. Todos los derechos reservados.
         </p>
-        <span className="w-8"></span>
+        {/* <span className="w-8"></span> */}
       </article>
     </footer>
   );
