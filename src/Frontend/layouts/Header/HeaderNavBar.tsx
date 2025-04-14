@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./HeaderNavBar.css";
 import { FC } from "react";
-import { HeaderNavBarProps } from "../../Store/types";
+import { HeaderNavBarProps } from "../../types/types";
 
 const HeaderNavBar: FC<HeaderNavBarProps> = ({ handleClick }) => {
   return (

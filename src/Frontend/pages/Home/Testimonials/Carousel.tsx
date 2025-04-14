@@ -4,7 +4,7 @@ import { MdStar } from "react-icons/md";
 import "swiper/swiper-bundle.css";
 import "./Carousel.css";
 import { FC } from "react";
-import { CarouselProps } from "../../../Store/types";
+import { CarouselProps } from "../../../types/types";
 
 export const Carousel: FC<CarouselProps> = ({ testimonials }) => {
   return (

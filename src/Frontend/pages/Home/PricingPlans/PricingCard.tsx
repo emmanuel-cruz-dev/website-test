@@ -1,4 +1,4 @@
-import { PricingCardProps } from "../../../Store/types";
+import { PricingCardProps } from "../../../types/types";
 import { FC } from "react";
 import "./PricingCard.css";
 import CheckIcon from "../../../components/CheckIcon/CheckIcon";

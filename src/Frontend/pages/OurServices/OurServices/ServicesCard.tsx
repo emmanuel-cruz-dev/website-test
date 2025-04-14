@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ServicesCardProps } from "../../../Store/types";
+import { ServicesCardProps } from "../../../types/types";
 import "./ServicesCard.css";
 
 export const ServicesCard: FC<ServicesCardProps> = ({

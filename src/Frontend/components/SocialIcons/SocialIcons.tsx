@@ -1,7 +1,7 @@
 import { FaFacebook, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import "./SocialIcons.css";
 import { FC } from "react";
-import { SocialIconsProps } from "../../Store/types";
+import { SocialIconsProps } from "../../types/types";
 
 const SocialIcons: FC<SocialIconsProps> = ({ borderRadius }) => {
   const border = borderRadius

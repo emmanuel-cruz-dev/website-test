@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { TeamCardProps } from "../../../Store/types";
+import { TeamCardProps } from "../../../types/types";
 import SocialIcons from "../../../components/SocialIcons/SocialIcons";
 
 export const TeamCard: FC<TeamCardProps> = ({ img, name, occupation }) => {

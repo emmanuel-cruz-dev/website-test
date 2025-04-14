@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import { AccordionProps } from "../../Store/types";
+import { AccordionProps } from "../../types/types";
 
 export const Accordion: FC<AccordionProps> = ({ id, title, content }) => {
   const [activeIndexes, setActiveIndexes] = useState<number[]>([]);

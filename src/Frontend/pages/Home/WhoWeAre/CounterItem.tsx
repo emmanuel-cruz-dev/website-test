@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { CounterItemProps } from "../../../Store/types";
+import { CounterItemProps } from "../../../types/types";
 
 export const CounterItem: FC<CounterItemProps> = ({ count, text }) => {
   return (
