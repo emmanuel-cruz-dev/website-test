@@ -16,6 +16,8 @@ function Calendar() {
         initialView="timeGridWeek"
         locales={[esLocale]}
         locale={"es"}
+        slotMinTime="08:00:00"
+        slotMaxTime="20:00:00"
         headerToolbar={{
           left: "prev,next today",
           center: "title",
