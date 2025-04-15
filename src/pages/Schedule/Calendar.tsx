@@ -4,9 +4,9 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import esLocale from "@fullcalendar/core/locales/es";
 
-import "@fullcalendar/core/index.css";
-import "@fullcalendar/daygrid/index.css";
-import "@fullcalendar/timegrid/index.css";
+// import "@fullcalendar/core/index.css";
+// import "@fullcalendar/daygrid/index.css";
+// import "@fullcalendar/timegrid/index.css";
 
 function Calendar() {
   return (
