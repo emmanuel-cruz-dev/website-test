@@ -1,4 +1,4 @@
-import { services } from "../../../mocks/services";
+import { services } from "../../../data/services";
 import { ServicesCard } from "./ServicesCard";
 
 function OurServices() {

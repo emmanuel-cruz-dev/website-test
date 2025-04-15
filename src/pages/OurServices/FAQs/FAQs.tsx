@@ -1,5 +1,5 @@
 import { Accordion } from "../../../components/Accordion/Accordion";
-import { accordionData } from "../../../mocks/accordionContent";
+import { accordionData } from "../../../data/accordionContent";
 
 function FAQs() {
   return (

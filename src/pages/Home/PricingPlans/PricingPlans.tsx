@@ -1,4 +1,4 @@
-import { pricingCardData } from "../../../mocks/pricingPlans";
+import { pricingCardData } from "../../../data/pricingPlans";
 import { PricingCard } from "./PricingCard";
 
 function PricingPlans() {

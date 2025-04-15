@@ -3,19 +3,29 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import esLocale from "@fullcalendar/core/locales/es";
+import { FC } from "react";
+import "./Calendar.css";
 
-// import "@fullcalendar/core/index.css";
-// import "@fullcalendar/daygrid/index.css";
-// import "@fullcalendar/timegrid/index.css";
+interface CalendarProps {
+  title: string;
+  events: Array<{
+    title: string;
+    start: string;
+    end: string;
+    color: string;
+  }>;
+}
 
-function Calendar() {
+const Calendar: FC<CalendarProps> = ({ title, events }) => {
   return (
     <article className="p-4 bg-white rounded-xl shadow-md">
+      <h2 className="text-4xl py-4 pb-6 text-left">{title}</h2>
       <FullCalendar
         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
         initialView="timeGridWeek"
         locales={[esLocale]}
-        locale={"es"}
+        locale="es"
+        allDayText="Horarios"
         slotMinTime="08:00:00"
         slotMaxTime="20:00:00"
         headerToolbar={{
@@ -25,23 +35,10 @@ function Calendar() {
         }}
         editable={true}
         selectable={true}
-        events={[
-          {
-            title: "Turno ocupado",
-            start: "2025-04-16T10:00:00",
-            end: "2025-04-16T10:30:00",
-            color: "#3D8CC7",
-          },
-          {
-            title: "Disponible",
-            start: "2025-04-16T11:00:00",
-            end: "2025-04-16T11:30:00",
-            color: "#D4EDDA",
-          },
-        ]}
+        events={events}
       />
     </article>
   );
-}
+};
 
 export default Calendar;
