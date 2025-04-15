@@ -6,6 +6,7 @@ import Footer from "./layouts/Footer/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import Loading from "./components/Loading/Loading";
 import Register from "./pages/Register/Register";
+import Schedule from "./pages/Schedule/Schedule";
 
 const Contact = lazy(() => import("./pages/Contact/Contact/Contact"));
 // const Features = lazy(() => import("./pages/Home/Features/Features"));
@@ -42,6 +43,12 @@ const About = () => (
   </Suspense>
 );
 
+const SchedulePage = () => (
+  <Suspense fallback={<Loading />}>
+    <Schedule />
+  </Suspense>
+);
+
 const Services = () => (
   <Suspense fallback={<Loading />}>
     <OurServices />
@@ -63,6 +70,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/schedule" element={<SchedulePage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
