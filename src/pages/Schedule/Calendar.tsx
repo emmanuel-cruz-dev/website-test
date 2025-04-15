@@ -4,9 +4,13 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import esLocale from "@fullcalendar/core/locales/es";
 
-const Calendar = () => {
+import "@fullcalendar/core/index.css";
+import "@fullcalendar/daygrid/index.css";
+import "@fullcalendar/timegrid/index.css";
+
+function Calendar() {
   return (
-    <div className="p-4 bg-white rounded-xl shadow-md">
+    <article className="p-4 bg-white rounded-xl shadow-md">
       <FullCalendar
         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
         initialView="timeGridWeek"
@@ -34,8 +38,8 @@ const Calendar = () => {
           },
         ]}
       />
-    </div>
+    </article>
   );
-};
+}
 
 export default Calendar;

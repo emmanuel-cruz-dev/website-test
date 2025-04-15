@@ -1,6 +1,6 @@
 import Calendar from "./Calendar";
 
-const Schedule = () => {
+function Schedule() {
   return (
     <section className="container my-12">
       <article className="text-center lg:col-span-3">
@@ -9,6 +9,6 @@ const Schedule = () => {
       </article>
     </section>
   );
-};
+}
 
 export default Schedule;
