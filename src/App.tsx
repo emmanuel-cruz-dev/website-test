@@ -5,6 +5,7 @@ import Header from "./layouts/Header/Header";
 import Footer from "./layouts/Footer/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import Loading from "./components/Loading/Loading";
+import Register from "./pages/Register/Register";
 
 const Contact = lazy(() => import("./pages/Contact/Contact/Contact"));
 const Features = lazy(() => import("./pages/Home/Features/Features"));
@@ -64,6 +65,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <ScrollToTopButton />
       <Footer />
