@@ -62,14 +62,14 @@ export const schedules = {
   fonoaudiologia: [
     {
       title: "Ocupado",
-      start: "2025-04-16T08:00:00",
-      end: "2025-04-16T08:30:00",
+      start: "2025-04-15T08:00:00",
+      end: "2025-04-15T08:30:00",
       color: "#F8D7DA",
     },
     {
       title: "Disponible",
-      start: "2025-04-16T08:30:00",
-      end: "2025-04-16T09:00:00",
+      start: "2025-04-15T08:30:00",
+      end: "2025-04-15T09:00:00",
       color: "#D4EDDA",
     },
     {
@@ -129,14 +129,14 @@ export const schedules = {
 
     {
       title: "Ocupado",
-      start: "2025-04-17T08:00:00",
-      end: "2025-04-17T08:30:00",
+      start: "2025-04-17T14:00:00",
+      end: "2025-04-17T14:30:00",
       color: "#F8D7DA",
     },
     {
       title: "Disponible",
-      start: "2025-04-17T08:30:00",
-      end: "2025-04-17T09:00:00",
+      start: "2025-04-17T11:30:00",
+      end: "2025-04-17T12:00:00",
       color: "#D4EDDA",
     },
     {
