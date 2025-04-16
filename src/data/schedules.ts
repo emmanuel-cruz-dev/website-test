@@ -279,26 +279,26 @@ export const schedules = {
   "terapia-ocupacional": [
     {
       title: "Ocupado",
-      start: "2025-04-19T08:00:00",
-      end: "2025-04-19T08:30:00",
+      start: "2025-04-17T08:00:00",
+      end: "2025-04-17T08:30:00",
       color: "#F8D7DA",
     },
     {
       title: "Disponible",
-      start: "2025-04-19T09:00:00",
-      end: "2025-04-19T09:30:00",
+      start: "2025-04-17T09:00:00",
+      end: "2025-04-17T09:30:00",
       color: "#D4EDDA",
     },
     {
       title: "Disponible",
-      start: "2025-04-19T10:00:00",
-      end: "2025-04-19T10:30:00",
+      start: "2025-04-18T10:00:00",
+      end: "2025-04-18T10:30:00",
       color: "#D4EDDA",
     },
     {
       title: "Ocupado",
-      start: "2025-04-19T11:00:00",
-      end: "2025-04-19T11:30:00",
+      start: "2025-04-18T11:00:00",
+      end: "2025-04-18T11:30:00",
       color: "#F8D7DA",
     },
     {
@@ -327,14 +327,14 @@ export const schedules = {
     },
     {
       title: "Ocupado",
-      start: "2025-04-19T16:00:00",
-      end: "2025-04-19T16:30:00",
+      start: "2025-04-20T16:00:00",
+      end: "2025-04-20T16:30:00",
       color: "#F8D7DA",
     },
     {
       title: "Disponible",
-      start: "2025-04-19T17:00:00",
-      end: "2025-04-19T17:30:00",
+      start: "2025-04-20T17:00:00",
+      end: "2025-04-20T17:30:00",
       color: "#D4EDDA",
     },
   ],
