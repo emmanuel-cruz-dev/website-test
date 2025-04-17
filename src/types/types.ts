@@ -58,3 +58,13 @@ export interface AccordionProps {
   title: string;
   content: string;
 }
+
+export interface CalendarProps {
+  title: string;
+  events: Array<{
+    title: string;
+    start: string;
+    end: string;
+    color: string;
+  }>;
+}

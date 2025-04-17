@@ -5,16 +5,7 @@ import interactionPlugin from "@fullcalendar/interaction";
 import esLocale from "@fullcalendar/core/locales/es";
 import { FC } from "react";
 import "./Calendar.css";
-
-interface CalendarProps {
-  title: string;
-  events: Array<{
-    title: string;
-    start: string;
-    end: string;
-    color: string;
-  }>;
-}
+import { CalendarProps } from "../../types/types";
 
 const Calendar: FC<CalendarProps> = ({ title, events }) => {
   return (
