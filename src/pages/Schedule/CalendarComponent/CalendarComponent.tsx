@@ -91,6 +91,7 @@ const CalendarComponent: React.FC = () => {
   const generateAvailableSlots = () => {
     const { start: visibleStart, end: visibleEnd } = visibleRangeRef.current;
     const newAvailableSlots: Appointment[] = [];
+    console.log(visibleEnd);
 
     // Empezar desde el inicio de la semana
     let currentDate = startOfWeek(visibleStart);
