@@ -1,6 +1,7 @@
 import { ChangeEvent, useState } from "react";
-import Calendar from "./Calendar";
-import { schedules } from "../../data/schedules";
+import CalendarComponent from "./CalendarComponent/CalendarComponent";
+// import Calendar from "./Calendar";
+// import { schedules } from "../../data/schedules";
 
 type Specialty =
   | "fonoaudiologia"
@@ -17,12 +18,12 @@ function Schedule() {
   };
 
   // Mapeo para transformar los valores en títulos legibles
-  const specialtyTitles: Record<Specialty, string> = {
-    fonoaudiologia: "Fonoaudiología",
-    psicologia: "Psicología",
-    psicopedagogía: "Psicopedagogía",
-    "terapia-ocupacional": "Terapia Ocupacional",
-  };
+  // const specialtyTitles: Record<Specialty, string> = {
+  //   fonoaudiologia: "Fonoaudiología",
+  //   psicologia: "Psicología",
+  //   psicopedagogía: "Psicopedagogía",
+  //   "terapia-ocupacional": "Terapia Ocupacional",
+  // };
 
   return (
     <section className="container my-12">
@@ -45,10 +46,11 @@ function Schedule() {
             <option value="terapia-ocupacional">Terapia Ocupacional</option>
           </select>
         </div>
-        <Calendar
+        {/* <Calendar
           title={specialtyTitles[specialty as Specialty] || "Fonoaudiología"}
           events={schedules[specialty]}
-        />
+        /> */}
+        <CalendarComponent />
       </article>
     </section>
   );
