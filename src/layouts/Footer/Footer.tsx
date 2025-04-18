@@ -1,5 +1,5 @@
 import LogoIcon from "../../assets/aura-icon.png";
-import { FaPhone, FaEnvelope, FaMapMarker } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaMapMarker, FaGithub } from "react-icons/fa";
 import "./Footer.css";
 import SocialIcons from "../../components/SocialIcons/SocialIcons";
 import { Link } from "react-router-dom";
@@ -81,10 +81,19 @@ function Footer() {
           </form>
         </article>
       </section>
-      <article className="flex justify-center items-center p-6 py-8 md:px-10">
+      <article className="flex justify-between items-center p-6 py-8 md:px-10">
+        <a
+          href="https://github.com/AuraFTG"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Repositorio de GitHub"
+        >
+          <FaGithub className="text-3xl hover:scale-110 transition-transform duration-300" />
+        </a>
         <p className="text-neutral-100 text-center w-2/3 md:w-auto">
           Aura copyright © 2025. Todos los derechos reservados.
         </p>
+        <span></span>
       </article>
     </footer>
   );

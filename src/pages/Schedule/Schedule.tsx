@@ -1,29 +1,29 @@
-// import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useState } from "react";
+import { schedules } from "../../data/schedules";
 import CalendarComponent from "./CalendarComponent/CalendarComponent";
 // import Calendar from "./Calendar";
-// import { schedules } from "../../data/schedules";
 
-// type Specialty =
-//   | "fonoaudiologia"
-//   | "psicologia"
-//   | "psicopedagogía"
-//   | "terapia-ocupacional";
+type Specialty =
+  | "fonoaudiologia"
+  | "psicologia"
+  | "psicopedagogia"
+  | "terapiaOcupacional";
 
 function Schedule() {
-  // const [specialty, setSpecialty] = useState<Specialty>("fonoaudiologia");
+  const [specialty, setSpecialty] = useState<Specialty>("fonoaudiologia");
 
-  // const handleSelection = (e: ChangeEvent<HTMLSelectElement>) => {
-  //   const selection = e.target.value as Specialty;
-  //   setSpecialty(selection);
-  // };
+  const handleSelection = (e: ChangeEvent<HTMLSelectElement>) => {
+    const selection = e.target.value as Specialty;
+    setSpecialty(selection);
+  };
 
   // Mapeo para transformar los valores en títulos legibles
-  // const specialtyTitles: Record<Specialty, string> = {
-  //   fonoaudiologia: "Fonoaudiología",
-  //   psicologia: "Psicología",
-  //   psicopedagogía: "Psicopedagogía",
-  //   "terapia-ocupacional": "Terapia Ocupacional",
-  // };
+  const specialtyTitles: Record<Specialty, string> = {
+    fonoaudiologia: "Fonoaudiología",
+    psicologia: "Psicología",
+    psicopedagogia: "Psicopedagogía",
+    terapiaOcupacional: "Terapia Ocupacional",
+  };
 
   return (
     <section className="container my-12">
@@ -32,7 +32,7 @@ function Schedule() {
         <div className="mb-4">
           <select
             className="w-60 py-2 px-2 cursor-pointer rounded-sm"
-            // onChange={handleSelection}
+            onChange={handleSelection}
             name="specialty"
             id="specialty"
             defaultValue=""
@@ -42,17 +42,15 @@ function Schedule() {
             </option>
             <option value="fonoaudiologia">Fonoaudiología</option>
             <option value="psicologia">Psicología</option>
-            <option value="psicopedagogía">Psicopedagogía</option>
-            <option value="terapia-ocupacional">Terapia Ocupacional</option>
+            <option value="psicopedagogia">Psicopedagogía</option>
+            <option value="terapiaOcupacional">Terapia Ocupacional</option>
           </select>
         </div>
 
-        <CalendarComponent />
-
-        {/* <Calendar
-            title={specialtyTitles[specialty as Specialty] || "Fonoaudiología"}
-            events={schedules[specialty]}
-          /> */}
+        <CalendarComponent
+          title={specialtyTitles[specialty as Specialty] || "Fonoaudiología"}
+          events={schedules[specialty]}
+        />
       </article>
     </section>
   );

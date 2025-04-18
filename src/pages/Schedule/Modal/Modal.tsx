@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { format } from "date-fns";
 
+interface ModalData {
+  id?: string;
+  title?: string;
+  start: Date;
+  end: Date;
+  status?: "available" | "booked";
+}
+
 interface ModalProps {
   mode: "add" | "edit" | "delete";
   isAvailableSlot?: boolean;
-  initialData: {
-    id?: string;
-    title?: string;
-    start: Date;
-    end: Date;
-    status?: "available" | "booked";
-  };
-  onSave: (data: any) => void;
+  initialData: ModalData;
+  onSave: (data: ModalData) => void;
   onDelete: () => void;
   onClose: () => void;
 }
