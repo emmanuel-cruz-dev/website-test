@@ -74,7 +74,8 @@ const CalendarComponent: FC<CalendarComponentProps> = ({ title, events }) => {
         start: appointmentData.start || selectedDate,
         end:
           appointmentData.end ||
-          new Date(selectedDate.getTime() + 60 * 60 * 1000), // +1 hora por defecto
+          //new Date(selectedDate.getTime() + 60 * 60 * 1000), // +1 hora por defecto
+          new Date(selectedDate.getTime() + 30 * 60 * 1000), // +30 media hora por defecto
         status: appointmentData.status || "available",
       };
 
@@ -176,7 +177,7 @@ const CalendarComponent: FC<CalendarComponentProps> = ({ title, events }) => {
               : {
                   start: selectedDate || new Date(),
                   end: selectedDate
-                    ? new Date(selectedDate.getTime() + 60 * 60 * 1000)
+                    ? new Date(selectedDate.getTime() + 30 * 60 * 1000)
                     : new Date(),
                   status: "available",
                 }
