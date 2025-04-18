@@ -54,6 +54,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 640px) {
+  .container {
+    width: 96% !important;
+  }
+}
+
 .text__accent-purple {
   color: var(--purple-vivid-color);
 }

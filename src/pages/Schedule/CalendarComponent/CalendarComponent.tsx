@@ -120,8 +120,8 @@ const CalendarComponent: FC<CalendarComponentProps> = ({ title, events }) => {
   };
 
   return (
-    <div className="p-4">
-      <div className="p-4 bg-white rounded-lg shadow">
+    <div className="p-4 overflow-x-scroll">
+      <div className="p-4 bg-white rounded-lg shadow min-w-[30rem]">
         <h1 className="text-3xl font-bold py-6">Calendario: {title}</h1>
         <FullCalendar
           ref={calendarRef}
