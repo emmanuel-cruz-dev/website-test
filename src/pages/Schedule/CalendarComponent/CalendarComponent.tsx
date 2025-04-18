@@ -120,8 +120,8 @@ const CalendarComponent: FC<CalendarComponentProps> = ({ title, events }) => {
   };
 
   return (
-    <div className="p-4 overflow-x-scroll">
-      <div className="p-4 bg-white rounded-lg shadow min-w-[38rem]">
+    <article className="p-4 overflow-x-scroll">
+      <div className="p-4 text-xs md:text-base bg-white rounded-lg shadow min-w-[38rem]">
         <h1 className="text-2xl md:text-3xl font-bold py-6">
           Calendario: {title}
         </h1>
@@ -189,7 +189,7 @@ const CalendarComponent: FC<CalendarComponentProps> = ({ title, events }) => {
           onClose={handleCloseModal}
         />
       )}
-    </div>
+    </article>
   );
 };
 
