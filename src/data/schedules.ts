@@ -11,14 +11,14 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "2",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-15T08:30:00",
       end: "2025-04-15T09:00:00",
       status: "booked",
     },
     {
       id: "3",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-16T09:00:00",
       end: "2025-04-16T09:30:00",
       status: "booked",
@@ -32,7 +32,7 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "5",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-16T11:00:00",
       end: "2025-04-16T11:30:00",
       status: "booked",
@@ -46,7 +46,7 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "7",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-16T13:00:00",
       end: "2025-04-16T13:30:00",
       status: "booked",
@@ -60,14 +60,14 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "9",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-16T15:00:00",
       end: "2025-04-16T15:30:00",
       status: "booked",
     },
     {
       id: "10",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-16T16:00:00",
       end: "2025-04-16T16:30:00",
       status: "booked",
@@ -89,14 +89,14 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "13",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-17T11:30:00",
       end: "2025-04-17T12:00:00",
       status: "booked",
     },
     {
       id: "14",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-17T09:00:00",
       end: "2025-04-17T09:30:00",
       status: "booked",
@@ -112,7 +112,7 @@ export const schedules: Record<string, Appointment[]> = {
   psicologia: [
     {
       id: "1",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-17T08:00:00",
       end: "2025-04-17T08:30:00",
       status: "booked",
@@ -126,7 +126,7 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "3",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-17T10:00:00",
       end: "2025-04-17T10:30:00",
       status: "booked",
@@ -140,14 +140,14 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "5",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-17T12:00:00",
       end: "2025-04-17T12:30:00",
       status: "booked",
     },
     {
       id: "6",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-17T13:00:00",
       end: "2025-04-17T13:30:00",
       status: "booked",
@@ -161,7 +161,7 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "8",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-17T15:00:00",
       end: "2025-04-17T15:30:00",
       status: "booked",
@@ -175,7 +175,7 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "10",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-17T17:00:00",
       end: "2025-04-17T17:30:00",
       status: "booked",
@@ -191,7 +191,7 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "2",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-18T09:00:00",
       end: "2025-04-18T09:30:00",
       status: "booked",
@@ -205,7 +205,7 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "4",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-18T11:00:00",
       end: "2025-04-18T11:30:00",
       status: "booked",
@@ -219,14 +219,14 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "6",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-18T13:00:00",
       end: "2025-04-18T13:30:00",
       status: "booked",
     },
     {
       id: "7",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-18T14:00:00",
       end: "2025-04-18T14:30:00",
       status: "booked",
@@ -240,7 +240,7 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "9",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-18T16:00:00",
       end: "2025-04-18T16:30:00",
       status: "booked",
@@ -263,14 +263,14 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "2",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-17T09:00:00",
       end: "2025-04-17T09:30:00",
       status: "booked",
     },
     {
       id: "3",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-18T10:00:00",
       end: "2025-04-18T10:30:00",
       status: "booked",
@@ -284,14 +284,14 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "5",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-19T12:00:00",
       end: "2025-04-19T12:30:00",
       status: "booked",
     },
     {
       id: "6",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-19T13:00:00",
       end: "2025-04-19T13:30:00",
       status: "booked",
@@ -305,7 +305,7 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "8",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-19T15:00:00",
       end: "2025-04-19T15:30:00",
       status: "booked",
@@ -319,7 +319,7 @@ export const schedules: Record<string, Appointment[]> = {
     },
     {
       id: "10",
-      title: "Disponible",
+      title: "Ocupado",
       start: "2025-04-20T17:00:00",
       end: "2025-04-20T17:30:00",
       status: "booked",
