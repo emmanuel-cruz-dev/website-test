@@ -161,6 +161,7 @@ const CalendarComponent: FC<CalendarComponentProps> = ({ title, events }) => {
             minute: "2-digit",
             hour12: false,
           }}
+          longPressDelay={300}
         />
       </div>
 
