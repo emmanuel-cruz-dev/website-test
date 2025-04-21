@@ -1,0 +1,22 @@
+[
+  { "id": 1, "name": "María González", "dni": "23456789A" },
+  { "id": 2, "name": "Juan Pérez", "dni": "34567890B" },
+  { "id": 3, "name": "Laura Fernández", "dni": "45678901C" },
+  { "id": 4, "name": "Carlos López", "dni": "56789012D" },
+  { "id": 5, "name": "Ana Torres", "dni": "67890123E" },
+  { "id": 6, "name": "Sofía Romero", "dni": "78901234F" },
+  { "id": 7, "name": "Miguel Sánchez", "dni": "89012345G" },
+  { "id": 8, "name": "Lucía Herrera", "dni": "90123456H" },
+  { "id": 9, "name": "Pedro Ruiz", "dni": "12345678J" },
+  { "id": 10, "name": "Valentina Castro", "dni": "23456789K" },
+  { "id": 11, "name": "Martín Vidal", "dni": "34567890L" },
+  { "id": 12, "name": "Camila Duarte", "dni": "45678901M" },
+  { "id": 13, "name": "Diego Paredes", "dni": "56789012N" },
+  { "id": 14, "name": "Elena Ríos", "dni": "67890123P" },
+  { "id": 15, "name": "Joaquín Navarro", "dni": "78901234Q" },
+  { "id": 16, "name": "Daniela Vega", "dni": "89012345R" },
+  { "id": 17, "name": "Tomás Molina", "dni": "90123456S" },
+  { "id": 18, "name": "Isabella León", "dni": "12345678T" },
+  { "id": 19, "name": "Sebastián Ortiz", "dni": "23456789U" },
+  { "id": 20, "name": "Emma Salas", "dni": "34567890V" }
+]
