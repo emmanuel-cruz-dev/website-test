@@ -8,6 +8,7 @@ import Loading from "./components/Loading/Loading";
 import Register from "./pages/Register/Register";
 import Schedule from "./pages/Schedule/Schedule";
 import Professionals from "./pages/OurServices/Professionals/Professionals";
+import Patients from "./pages/Patients/Patients";
 
 const Contact = lazy(() => import("./pages/Contact/Contact/Contact"));
 const Hero = lazy(() => import("./pages/Home/Hero/Hero"));
@@ -42,6 +43,12 @@ const Services = () => (
   </Suspense>
 );
 
+const PatientsPage = () => (
+  <Suspense fallback={<Loading />}>
+    <Patients />
+  </Suspense>
+);
+
 const ContactPage = () => (
   <Suspense fallback={<Loading />}>
     <Contact />
@@ -56,6 +63,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/professionals" element={<Services />} />
+        <Route path="/patients" element={<PatientsPage />} />
         <Route path="/schedule" element={<SchedulePage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/login" element={<Login />} />
