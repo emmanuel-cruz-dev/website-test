@@ -21,6 +21,17 @@ function Patients() {
               render: (item) => (item.hasInsurance ? "Sí" : "No"),
             },
             { key: "paymentType", header: "Método de pago" },
+            {
+              key: "photoUrl",
+              header: "Foto",
+              render: (item) => (
+                <img
+                  src={item.photoUrl}
+                  alt="Foto"
+                  className="w-10 h-10 rounded-full"
+                />
+              ),
+            },
           ]}
         />
       </article>
