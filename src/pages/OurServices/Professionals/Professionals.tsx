@@ -76,6 +76,11 @@ const ProfessionalsTable: FC<ProfessionalsTableProps> = ({ professionals }) => {
 
 function Professionals() {
   const [responses, setResponses] = useState<Professional[]>([]);
+  // const [show, setShow] = useState(false);
+
+  // const handleToggle = () => {
+  //   setShow(!show);
+  // };
 
   useEffect(() => {
     const fetchProfessionals = async () => {
@@ -101,21 +106,23 @@ function Professionals() {
     <section>
       <article className="container text-center">
         <h1 className="font-semibold text-3xl my-8">Profesionales</h1>
-        {/* {responses.length > 0 ? (
-          responses.map((professional, index) => (
-            <div key={index}>
-              <h2>Profesional N°{professional.id}</h2>
-              <p>Nombre: {professional.name}</p>
-              <p>Apellido: {professional.lastName}</p>
-              <p>{JSON.stringify(professional, null, 2)}</p>
-            </div>
-          ))
-        ) : (
-          <p>Cargando...</p>
-        )} */}
         {responses.length > 0 && (
           <ProfessionalsTable professionals={responses} />
         )}
+
+        {/* <div className="mt-8">
+          <button className="btn__primary" onClick={handleToggle}>
+            Ver Json
+          </button>
+          {responses.length > 0 &&
+            show &&
+            responses.map((professional, index) => (
+              <div className="my-4" key={index}>
+                <h2>Profesional N°{professional.id}</h2>
+                <p>{JSON.stringify(professional, null, 2)}</p>
+              </div>
+            ))}
+        </div> */}
       </article>
     </section>
   );

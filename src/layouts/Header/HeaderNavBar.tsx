@@ -17,7 +17,7 @@ const HeaderNavBar: FC<HeaderNavBarProps> = ({ handleClick }) => {
           <Link to="/schedule">Agenda</Link>
         </li>
         <li onClick={handleClick}>
-          <Link to="/services">Servicios</Link>
+          <Link to="/professionals">Profesionales</Link>
         </li>
         <li
           onClick={handleClick}
