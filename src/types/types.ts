@@ -68,3 +68,17 @@ export interface CalendarProps {
     color: string;
   }>;
 }
+
+export interface User {
+  id: number;
+  name: string;
+  email: string;
+  role: string;
+}
+
+export interface FetchResult {
+  status: "ok" | "error";
+  data: {
+    results: User[];
+  };
+}
