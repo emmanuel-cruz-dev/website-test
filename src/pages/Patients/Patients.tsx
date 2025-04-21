@@ -5,8 +5,6 @@ import {
 } from "../OurServices/Professionals/Professionals";
 
 function Patients() {
-  console.log(patients);
-
   return (
     <section>
       <article className="container text-center">
@@ -16,6 +14,7 @@ function Patients() {
           columns={[
             { key: "name", header: "Nombre" },
             { key: "lastName", header: "Apellido" },
+            { key: "dni", header: "DNI" },
             {
               key: "hasInsurance",
               header: "Tiene seguro",

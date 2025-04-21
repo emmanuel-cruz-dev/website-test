@@ -33,6 +33,7 @@ interface Professional extends BaseItem {
 }
 
 export interface Patient extends BaseItem {
+  dni: string;
   hasInsurance: boolean;
   paymentType: string;
   // Atributos específicos de pacientes
@@ -53,7 +54,7 @@ export const GenericTable = <T extends BaseItem>({
   columns,
 }: TableProps<T>) => {
   return (
-    <div className="overflow-x-auto">
+    <article className="overflow-x-auto mb-8">
       <table className="min-w-full bg-white border border-gray-200">
         <thead className="bg-gray-100">
           <tr>
@@ -78,7 +79,7 @@ export const GenericTable = <T extends BaseItem>({
           ))}
         </tbody>
       </table>
-    </div>
+    </article>
   );
 };
 
@@ -128,11 +129,11 @@ export const GenericTable = <T extends BaseItem>({
 
 function Professionals() {
   const [responses, setResponses] = useState<Professional[]>([]);
-  // const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);
 
-  // const handleToggle = () => {
-  //   setShow(!show);
-  // };
+  const handleToggle = () => {
+    setShow(!show);
+  };
 
   useEffect(() => {
     const fetchProfessionals = async () => {
@@ -163,8 +164,10 @@ function Professionals() {
           <GenericTable
             items={responses}
             columns={[
+              { key: "id", header: "ID" },
               { key: "name", header: "Nombre" },
               { key: "lastName", header: "Apellido" },
+              { key: "country", header: "País" },
               { key: "specialty", header: "Especialidad" },
               {
                 key: "photoUrl",
@@ -181,7 +184,7 @@ function Professionals() {
           />
         )}
 
-        {/* <div className="mt-8">
+        <div className="mt-8">
           <button className="btn__primary" onClick={handleToggle}>
             Ver Json
           </button>
@@ -193,7 +196,7 @@ function Professionals() {
                 <p>{JSON.stringify(professional, null, 2)}</p>
               </div>
             ))}
-        </div> */}
+        </div>
       </article>
     </section>
   );
