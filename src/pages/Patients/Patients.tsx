@@ -8,7 +8,7 @@ function Patients() {
   return (
     <section>
       <article className="container text-center">
-        <h2 className="font-semibold text-3xl my-8">Pacientes</h2>
+        <h2 className="font-semibold text-3xl my-10">Pacientes</h2>
         <GenericTable<Patient>
           items={patients}
           columns={[
@@ -28,7 +28,7 @@ function Patients() {
                 <img
                   src={item.photoUrl}
                   alt="Foto"
-                  className="w-10 h-10 rounded-full"
+                  className="w-12 h-12 rounded-full"
                 />
               ),
             },
