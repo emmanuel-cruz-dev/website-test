@@ -138,8 +138,8 @@ function Professionals() {
   useEffect(() => {
     const fetchProfessionals = async () => {
       const urls = Array.from(
-        { length: 5 },
-        (_, i) => `https://clinica-08df.onrender.com/professionals/${i + 2}`
+        { length: 10 },
+        (_, i) => `https://clinica-08df.onrender.com/professionals/${i + 1}`
       );
 
       try {
@@ -192,7 +192,7 @@ function Professionals() {
             show &&
             responses.map((professional, index) => (
               <div className="my-4" key={index}>
-                <h2>Profesional N°{professional.id}</h2>
+                <h2>Profesional N°{index + 1}</h2>
                 <p>{JSON.stringify(professional, null, 2)}</p>
               </div>
             ))}
