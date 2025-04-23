@@ -82,3 +82,9 @@ export interface FetchResult {
     results: User[];
   };
 }
+
+export interface ResultsFilterProps {
+  inputId: string;
+  placeholder: string;
+  onSearch: (query: string) => void;
+}
