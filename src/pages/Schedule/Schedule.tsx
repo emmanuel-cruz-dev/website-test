@@ -1,7 +1,6 @@
 import { ChangeEvent, useState } from "react";
 import { schedules } from "../../data/schedules";
 import CalendarComponent from "./CalendarComponent/CalendarComponent";
-// import Calendar from "./Calendar";
 
 type Specialty =
   | "fonoaudiologia"
