@@ -1,23 +1,5 @@
 import { useEffect, useState } from "react";
 
-// interface Professional {
-//   id: number;
-//   dni: string;
-//   name: string;
-//   lastName: string;
-//   phoneNumber: string;
-//   country: string;
-//   photoUrl: string;
-//   birthDate: string;
-//   licenseNumber: string;
-//   specialty: string;
-// }
-
-// interface ProfessionalsTableProps {
-//   items: Professional[];
-// }
-
-// Tipos base
 interface BaseItem {
   id: number;
   name: string;
@@ -29,17 +11,14 @@ interface BaseItem {
 interface Professional extends BaseItem {
   specialty: string;
   licenseNumber: string;
-  // Atributos específicos de profesionales
 }
 
 export interface Patient extends BaseItem {
   dni: string;
   hasInsurance: boolean;
   paymentType: string;
-  // Atributos específicos de pacientes
 }
 
-// Props con genéricos
 interface TableProps<T> {
   items: T[];
   columns: {
@@ -48,7 +27,7 @@ interface TableProps<T> {
     render?: (item: T) => React.ReactNode;
   }[];
 }
-// Componente genérico
+
 export const GenericTable = <T extends BaseItem>({
   items,
   columns,
@@ -159,7 +138,6 @@ function Professionals() {
     <section>
       <article className="container text-center">
         <h2 className="font-semibold text-3xl my-8">Profesionales</h2>
-        {/* {responses.length > 0 && <GenericTable items={responses} />} */}
         {responses.length > 0 && (
           <GenericTable
             items={responses}
