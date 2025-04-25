@@ -10,8 +10,6 @@ import Modal from "../Modal/Modal";
 export interface Appointment {
   id: string;
   title: string;
-  // start: Date;
-  // end: Date;
   start: string | Date;
   end: string | Date;
   status: "available" | "booked";
@@ -28,22 +26,6 @@ const CalendarComponent: FC<CalendarComponentProps> = ({ title, events }) => {
   const [selectedEvent, setSelectedEvent] = useState<EventApi | null>(null);
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [appointments, setAppointments] = useState<Appointment[]>([]);
-  // const [appointments, setAppointments] = useState<Appointment[]>([
-  //   {
-  //     id: "1",
-  //     title: "Turno Ocupado",
-  //     start: new Date("2025-04-17T10:00:00"),
-  //     end: new Date("2025-04-17T11:30:00"),
-  //     status: "booked",
-  //   },
-  //   {
-  //     id: "2",
-  //     title: "Turno Disponible",
-  //     start: new Date("2025-04-17T14:00:00"),
-  //     end: new Date("2025-04-17T15:00:00"),
-  //     status: "available",
-  //   },
-  // ]);
 
   useEffect(() => {
     setAppointments(events);
