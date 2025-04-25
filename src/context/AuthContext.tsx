@@ -5,7 +5,6 @@ import {
   useEffect,
   ReactNode,
 } from "react";
-// import { AuthContext } from "../hooks/useAuth";
 
 interface User {
   id: string;
@@ -41,7 +40,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const fetchUserData = async (token: string) => {
     try {
-      const res = await fetch("https://tu-api.com/user/me", {
+      // const res = await fetch("https://tu-api.com/user/me", {
+      const res = await fetch("https://clinica-08df.onrender.com/", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -60,7 +60,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const login = async (email: string, password: string) => {
-    const res = await fetch("https://tu-api.com/auth/login", {
+    // const res = await fetch("https://tu-api.com/auth/login", {
+    const res = await fetch("https://clinica-08df.onrender.com/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
