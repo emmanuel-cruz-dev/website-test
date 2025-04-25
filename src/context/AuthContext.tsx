@@ -49,6 +49,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
       if (res.ok) {
         const data = await res.json();
+
         setUser(data);
       } else {
         logout();
