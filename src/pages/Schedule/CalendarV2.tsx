@@ -3,35 +3,26 @@ import DatePicker from "react-datepicker";
 import { es } from "date-fns/locale";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "react-datepicker/dist/react-datepicker.css";
+import { ReactDatePickerCustomHeaderProps } from "react-datepicker";
 
-// Este componente simula un calendario similar al mostrado en la imagen
 export default function CalendarV2() {
-  const [fecha, setFecha] = useState(new Date());
+  const [fecha, setFecha] = useState<Date | null>(new Date());
   const [mesVisible, setMesVisible] = useState(new Date());
 
-  // Para navegar entre meses
-  const anteriorMes = () => {
-    const nuevoMes = new Date(mesVisible);
-    nuevoMes.setMonth(nuevoMes.getMonth() - 1);
-    setMesVisible(nuevoMes);
-  };
+  const formatoMesAno = (date: Date) => {
+    console.log(mesVisible);
 
-  const siguienteMes = () => {
-    const nuevoMes = new Date(mesVisible);
-    nuevoMes.setMonth(nuevoMes.getMonth() + 1);
-    setMesVisible(nuevoMes);
-  };
-
-  // Formatear nombre del mes y año
-  const formatoMesAno = (date) => {
     return new Intl.DateTimeFormat("es", {
       month: "long",
       year: "numeric",
     }).format(date);
   };
 
-  // Personalización del encabezado del calendario
-  const encabezadoPersonalizado = ({ date, decreaseMonth, increaseMonth }) => (
+  const encabezadoPersonalizado = ({
+    date,
+    decreaseMonth,
+    increaseMonth,
+  }: ReactDatePickerCustomHeaderProps) => (
     <div className="flex items-center justify-between mb-4 px-2">
       <div className="text-base font-semibold">{formatoMesAno(date)}</div>
       <div className="flex space-x-2">
@@ -53,19 +44,6 @@ export default function CalendarV2() {
     </div>
   );
 
-  // Día personalizado para mostrar un círculo en el día seleccionado
-  const diaPersonalizado = (dateProps) => {
-    const { date, selected } = dateProps;
-    return (
-      <div
-        className={`w-10 h-10 flex items-center justify-center rounded-full
-        ${selected ? "bg-indigo-600 text-white" : ""}`}
-      >
-        {date.getDate()}
-      </div>
-    );
-  };
-
   return (
     <div className="w-full bg-gray-100 p-4 rounded-lg">
       <DatePicker
@@ -75,7 +53,6 @@ export default function CalendarV2() {
         locale={es}
         inline
         renderCustomHeader={encabezadoPersonalizado}
-        // renderDayContents={diaPersonalizado}
         calendarClassName=""
         dayClassName={() => "text-center"}
       />
