@@ -1,56 +1,36 @@
-// import { ChangeEvent } from "react";
+import { ChangeEvent, useState } from "react";
 import CalendarV2 from "./CalendarV2";
 import CustomCalendar from "./CustomCalendar";
 import CalendarMUI from "./CalendarMUI";
-// import { schedules } from "../../data/schedules";
-// import CalendarComponent from "./CalendarComponent/CalendarComponent";
+import { schedules } from "../../data/schedules";
+import CalendarComponent from "./CalendarComponent/CalendarComponent";
 
-// type Specialty =
-//   | "fonoaudiologia"
-//   | "psicologia"
-//   | "psicopedagogia"
-//   | "terapiaOcupacional";
+type Specialty =
+  | "fonoaudiologia"
+  | "psicologia"
+  | "psicopedagogia"
+  | "terapiaOcupacional";
 
 function Schedule() {
-  // const [specialty, setSpecialty] = useState<Specialty>("fonoaudiologia");
+  const [specialty, setSpecialty] = useState<Specialty>("fonoaudiologia");
 
-  // const handleSelection = (e: ChangeEvent<HTMLSelectElement>) => {
-  //   const selection = e.target.value as Specialty;
-  //   console.log(selection);
-
-  //   setSpecialty(selection);
-  // };
+  const handleSelection = (e: ChangeEvent<HTMLSelectElement>) => {
+    const selection = e.target.value as Specialty;
+    setSpecialty(selection);
+  };
 
   // Mapeo para transformar los valores en títulos legibles
-  // const specialtyTitles: Record<Specialty, string> = {
-  //   fonoaudiologia: "Fonoaudiología",
-  //   psicologia: "Psicología",
-  //   psicopedagogia: "Psicopedagogía",
-  //   terapiaOcupacional: "Terapia Ocupacional",
-  // };
+  const specialtyTitles: Record<Specialty, string> = {
+    fonoaudiologia: "Fonoaudiología",
+    psicologia: "Psicología",
+    psicopedagogia: "Psicopedagogía",
+    terapiaOcupacional: "Terapia Ocupacional",
+  };
 
   return (
     <section className="container my-12">
       <article className="text-center lg:col-span-3">
         <h1 className="text-3xl uppercase mb-8">Calendarios Disponibles</h1>
-        {/* <div className="mb-4">
-          <select
-            className="w-60 py-2 px-2 cursor-pointer rounded-sm"
-            onChange={handleSelection}
-            name="specialty"
-            id="specialty"
-            defaultValue=""
-          >
-            <option value="" disabled>
-              Selecciona una especialidad
-            </option>
-            <option value="fonoaudiologia">Fonoaudiología</option>
-            <option value="psicologia">Psicología</option>
-            <option value="psicopedagogia">Psicopedagogía</option>
-            <option value="terapiaOcupacional">Terapia Ocupacional</option>
-          </select>
-        </div> */}
-
         <div className="grid grid-cols-3 gap-4">
           <article>
             <h2 className="font-bold text-2xl mb-6">Opción 1</h2>
@@ -66,10 +46,28 @@ function Schedule() {
           </article>
         </div>
 
-        {/* <CalendarComponent
+        <div className="mt-8 mb-4">
+          <select
+            className="w-60 py-2 px-2 cursor-pointer rounded-sm"
+            onChange={handleSelection}
+            name="specialty"
+            id="specialty"
+            defaultValue=""
+          >
+            <option value="" disabled>
+              Selecciona una especialidad
+            </option>
+            <option value="fonoaudiologia">Fonoaudiología</option>
+            <option value="psicologia">Psicología</option>
+            <option value="psicopedagogia">Psicopedagogía</option>
+            <option value="terapiaOcupacional">Terapia Ocupacional</option>
+          </select>
+        </div>
+
+        <CalendarComponent
           title={specialtyTitles[specialty as Specialty] || "Fonoaudiología"}
           events={schedules[specialty]}
-        /> */}
+        />
       </article>
     </section>
   );
