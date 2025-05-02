@@ -51,7 +51,7 @@ function Schedule() {
           </select>
         </div> */}
 
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-3 gap-4">
           <article>
             <h2 className="font-bold text-2xl mb-6">Opción 1</h2>
             <CustomCalendar />
