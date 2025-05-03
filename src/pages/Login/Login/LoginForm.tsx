@@ -16,34 +16,25 @@ function LoginForm() {
           required
         />
       </div>
-      <div>
-        <input
-          type="password"
-          name="password"
-          placeholder="Contraseña*"
-          className="mt-1 w-full rounded-md border px-3 py-2"
-          required
-        />
-      </div>
+
       <div className="relative w-full max-w-md">
-        <label htmlFor="password" className="block text-sm text-gray-700 mb-1">
-          Contraseña
-        </label>
         <input
           id="password"
+          name="password"
           type={showPassword ? "text" : "password"}
-          className="w-full pr-10 border border-gray-400 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          placeholder="Tu contraseña"
+          className="mt-1 w-full pr-10 rounded-md border px-3 py-2"
+          placeholder="Contraseña*"
+          required
         />
         <button
           type="button"
-          className="absolute top-9 right-3 text-gray-500 hover:text-gray-700"
+          className="absolute top-4 right-3 text-gray-500 hover:text-gray-700"
           onClick={() => setShowPassword(!showPassword)}
           aria-label={
             showPassword ? "Ocultar contraseña" : "Mostrar contraseña"
           }
         >
-          {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+          {showPassword ? <Eye size={20} /> : <EyeOff size={20} />}
         </button>
       </div>
       <p className={`mt-4 text-center text-sm`}>
