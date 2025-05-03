@@ -30,22 +30,6 @@ function Schedule() {
   return (
     <section className="container my-12">
       <article className="text-center lg:col-span-3">
-        <h1 className="text-3xl uppercase mb-8">Calendarios Disponibles</h1>
-        <div className="grid grid-cols-3 gap-4">
-          <article>
-            <h2 className="font-bold text-2xl mb-6">Opción 1</h2>
-            <CustomCalendar />
-          </article>
-          <article>
-            <h2 className="font-bold text-2xl mb-6">Opción 2</h2>
-            <CalendarV2 />
-          </article>
-          <article>
-            <h2 className="font-bold text-2xl mb-6">Opción 3</h2>
-            <CalendarMUI />
-          </article>
-        </div>
-
         <div className="mt-8 mb-4">
           <select
             className="w-60 py-2 px-2 cursor-pointer rounded-sm"
@@ -68,6 +52,22 @@ function Schedule() {
           title={specialtyTitles[specialty as Specialty] || "Fonoaudiología"}
           events={schedules[specialty]}
         />
+
+        <h1 className="text-3xl uppercase mb-8">Calendarios Disponibles</h1>
+        <div className="grid grid-cols-3 gap-4">
+          <article>
+            <h2 className="font-bold text-2xl mb-6">Opción 1</h2>
+            <CustomCalendar />
+          </article>
+          <article>
+            <h2 className="font-bold text-2xl mb-6">Opción 2</h2>
+            <CalendarV2 />
+          </article>
+          <article>
+            <h2 className="font-bold text-2xl mb-6">Opción 3</h2>
+            <CalendarMUI />
+          </article>
+        </div>
       </article>
     </section>
   );
