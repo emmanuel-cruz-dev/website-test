@@ -62,50 +62,6 @@ export const GenericTable = <T extends BaseItem>({
   );
 };
 
-// const GenericTable: FC<ProfessionalsTableProps> = ({ items }) => {
-//   return (
-//     <div className="overflow-x-auto">
-//       <table className="min-w-full bg-white border border-gray-200">
-//         <thead className="bg-gray-100">
-//           <tr>
-//             <th className="py-2 px-4 border-b">ID</th>
-//             <th className="py-2 px-4 border-b">Nombre</th>
-//             <th className="py-2 px-4 border-b">Apellido</th>
-//             <th className="py-2 px-4 border-b">País</th>
-//             <th className="py-2 px-4 border-b">Especialidad</th>
-//             <th className="py-2 px-4 border-b">Foto</th>
-//           </tr>
-//         </thead>
-//         <tbody>
-//           {items.map((professional) => (
-//             <tr
-//               key={professional.id}
-//               className="odd:bg-slate-300 even:bg-neutral-200"
-//             >
-//               <td className="py-2 px-4 border-b text-center">
-//                 {professional.id}
-//               </td>
-//               <td className="py-2 px-4 border-b">{professional.name}</td>
-//               <td className="py-2 px-4 border-b">{professional.lastName}</td>
-//               <td className="py-2 px-4 border-b">{professional.country}</td>
-//               <td className="py-2 px-4 border-b">{professional.specialty}</td>
-//               <td className="py-2 px-4 border-b">
-//                 {professional.photoUrl && (
-//                   <img
-//                     src={professional.photoUrl}
-//                     alt={`Foto de ${professional.name}`}
-//                     className="w-10 h-10 rounded-full object-cover"
-//                   />
-//                 )}
-//               </td>
-//             </tr>
-//           ))}
-//         </tbody>
-//       </table>
-//     </div>
-//   );
-// };
-
 function Professionals() {
   const [responses, setResponses] = useState<Professional[]>([]);
   const [show, setShow] = useState(false);
@@ -138,7 +94,7 @@ function Professionals() {
     <section>
       <article className="container text-center">
         <h2 className="font-semibold text-3xl my-8">Profesionales</h2>
-        {responses.length > 0 && (
+        {responses.length > 0 ? (
           <GenericTable
             items={responses}
             columns={[
@@ -160,6 +116,8 @@ function Professionals() {
               },
             ]}
           />
+        ) : (
+          <span>No hay resultados</span>
         )}
 
         <div className="mt-8">
