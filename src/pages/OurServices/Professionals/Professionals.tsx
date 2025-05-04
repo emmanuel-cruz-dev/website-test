@@ -117,22 +117,24 @@ function Professionals() {
             ]}
           />
         ) : (
-          <span>No hay resultados</span>
+          <p className="text-lg">No hay profesionales que mostrar.</p>
         )}
 
-        <div className="mt-8">
-          <button className="btn__primary" onClick={handleToggle}>
-            Ver Json
-          </button>
-          {responses.length > 0 &&
-            show &&
-            responses.map((professional, index) => (
-              <div className="my-4" key={index}>
-                <h2>Profesional N°{index + 1}</h2>
-                <p>{JSON.stringify(professional, null, 2)}</p>
-              </div>
-            ))}
-        </div>
+        {responses.length > 0 && (
+          <div className="mt-8">
+            <button className="btn__primary" onClick={handleToggle}>
+              Ver Json
+            </button>
+            {responses.length > 0 &&
+              show &&
+              responses.map((professional, index) => (
+                <div className="my-4" key={index}>
+                  <h2>Profesional N°{index + 1}</h2>
+                  <p>{JSON.stringify(professional, null, 2)}</p>
+                </div>
+              ))}
+          </div>
+        )}
       </article>
     </section>
   );
