@@ -9,7 +9,6 @@ import Register from "./pages/Register/Register";
 import Schedule from "./pages/Schedule/Schedule";
 import Professionals from "./pages/OurServices/Professionals/Professionals";
 import Patients from "./pages/Patients/Patients";
-import Stats from "./components/Stats/Stats";
 
 const Contact = lazy(() => import("./pages/Contact/Contact/Contact"));
 const Hero = lazy(() => import("./pages/Home/Hero/Hero"));
@@ -22,7 +21,6 @@ const Login = lazy(() => import("./pages/Login/Login/Login"));
 const Home = () => (
   <Suspense fallback={<Loading />}>
     <Hero />
-    <Stats />
   </Suspense>
 );
 
