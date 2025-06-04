@@ -7,7 +7,6 @@ import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton"
 import Loading from "./components/Loading/Loading";
 import Register from "./pages/Register/Register";
 import Schedule from "./pages/Schedule/Schedule";
-import Professionals from "./pages/OurServices/Professionals/Professionals";
 import Patients from "./pages/Patients/Patients";
 
 const Contact = lazy(() => import("./pages/Contact/Contact/Contact"));
@@ -38,7 +37,6 @@ const SchedulePage = () => (
 
 const Services = () => (
   <Suspense fallback={<Loading />}>
-    <Professionals />
     <OurServices />
   </Suspense>
 );
