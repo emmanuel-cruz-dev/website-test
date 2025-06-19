@@ -1,6 +1,5 @@
 import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
 import Header from "./layouts/Header/Header";
 import Footer from "./layouts/Footer/Footer";
 import Loading from "./components/Loading/Loading";
