@@ -1,5 +1,5 @@
 function Hero() {
-  return <div>Hero</div>;
+  return <section className="h-screen">Hero</section>;
 }
 
 export default Hero;
