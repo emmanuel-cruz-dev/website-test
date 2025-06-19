@@ -14,7 +14,7 @@ function Header() {
             width={200}
             height={200}
           />
-          <p className="font-semibold">AURA</p>
+          <p className="font-semibold">E-commerce</p>
         </Link>
       </div>
     </header>
