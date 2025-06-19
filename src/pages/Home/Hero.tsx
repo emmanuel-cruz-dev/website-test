@@ -7,7 +7,7 @@ function Hero() {
         <figure className="w-32">
           <img className="w-full object-cover" src={CocaColaImg} alt="" />
         </figure>
-        <h1 className="text-4xl font-bold">Ofertas de la semana</h1>
+        <h1 className="text-4xl font-extrabold">Ofertas de la semana</h1>
       </article>
     </section>
   );

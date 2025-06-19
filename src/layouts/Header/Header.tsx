@@ -13,7 +13,7 @@ function Header() {
             width={200}
             height={200}
           />
-          <p className="font-semibold">Kiosco Kramer</p>
+          <p className="font-bold">Kramer</p>
         </Link>
       </div>
     </header>
