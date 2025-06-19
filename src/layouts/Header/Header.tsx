@@ -1,5 +1,4 @@
 import LogoIcon from "../../assets/aura-icon.png";
-import "./Header.css";
 import { Link } from "react-router-dom";
 
 function Header() {
