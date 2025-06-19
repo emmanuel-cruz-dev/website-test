@@ -1,19 +1,19 @@
-import LogoIcon from "../../assets/aura-icon.png";
+import KramerIcon from "../../assets/kisco-kramer-icon.png";
 import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header className="header p-4 md:px-10 md:py-5 text-[20px] font-[600] mb-8">
+    <header className="header p-4 md:px-10 md:py-5 text-lg font-semibold mb-8 shadow-2xl">
       <div className="flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2 z-10" title="Inicio">
           <img
-            className="max-w-12 p-1 rounded-full"
-            src={LogoIcon}
-            alt="Logo de LockKey, una serpiente con un candado."
+            className="max-w-10 object-cover"
+            src={KramerIcon}
+            alt=""
             width={200}
             height={200}
           />
-          <p className="font-semibold">E-commerce</p>
+          <p className="font-semibold">Kiosco Kramer</p>
         </Link>
       </div>
     </header>
