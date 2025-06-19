@@ -1,3 +1,3 @@
 # React + TypeScript + Vite
 
-Test template.
+Test template E-commerce.
