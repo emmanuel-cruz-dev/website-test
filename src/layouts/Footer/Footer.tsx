@@ -1,10 +1,35 @@
+import { House, Search, ShoppingCart, User } from "lucide-react";
+
 function Footer() {
   return (
-    <footer
-      className="footer py-4 bg-white shadow-[0_-12px_16px_-1px_rgba(0,0,0,0.1)]"
-      id="footer"
-    >
-      <p className="text-center w-auto">E-commerce copyright © 2025.</p>
+    <footer className="footer p-4 pb-2" id="footer">
+      <ul
+        className="flex justify-around items-center bg-white rounded-2xl p-3 px-4"
+        style={{
+          boxShadow: "0 4px 16px rgba(0, 0, 0, 0.25)",
+        }}
+      >
+        <li>
+          <a href="#">
+            <House />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <Search />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ShoppingCart />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <User />
+          </a>
+        </li>
+      </ul>
     </footer>
   );
 }
