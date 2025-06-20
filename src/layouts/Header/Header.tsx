@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header className="header p-4 md:px-10 md:py-5 text-lg font-semibold shadow-2xl">
-      <div className="flex justify-between items-center">
+    <header className="header p-4 md:px-10 text-lg font-semibold shadow-2xl">
+      <div className="flex justify-between items-center max-w-2xl mx-auto">
         <Link to="/" className="flex items-center gap-2 z-10" title="Inicio">
           <img
             className="max-w-10 object-cover"
