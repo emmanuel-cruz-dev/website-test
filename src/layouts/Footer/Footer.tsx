@@ -2,9 +2,9 @@ import { House, Search, ShoppingCart, User } from "lucide-react";
 
 function Footer() {
   return (
-    <footer className="footer p-4 pb-2" id="footer">
+    <footer className="footer p-4 pb-2 max-w-2xl mx-auto" id="footer">
       <ul
-        className="flex justify-around items-center bg-white rounded-2xl p-3 px-4"
+        className="flex justify-around items-center bg-white rounded-2xl p-4"
         style={{
           boxShadow: "0 4px 16px rgba(0, 0, 0, 0.25)",
         }}

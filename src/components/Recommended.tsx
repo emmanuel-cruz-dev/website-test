@@ -19,13 +19,13 @@ function Recommended() {
           }}
           breakpoints={{
             640: {
-              slidesPerView: 2, // Mostrar 2 slides en pantallas pequeñas
+              slidesPerView: 2,
             },
             768: {
-              slidesPerView: 3, // Mostrar 3 slides en pantallas medianas
+              slidesPerView: 3,
             },
             1024: {
-              slidesPerView: 4, // Mostrar 4 slides en pantallas grandes
+              slidesPerView: 4,
             },
           }}
         >
