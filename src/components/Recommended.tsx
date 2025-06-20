@@ -6,7 +6,7 @@ import { products } from "../data/products";
 function Recommended() {
   return (
     <section className="lg:py-6 px-2 max-w-2xl mx-auto pb-6">
-      <h1>Recomendados</h1>
+      <h1 className="text-lg font-semibold mb-2">Recomendados</h1>
       <main>
         <Swiper
           modules={[Autoplay]}
@@ -17,7 +17,17 @@ function Recommended() {
             delay: 5000,
             disableOnInteraction: false,
           }}
-          className=""
+          breakpoints={{
+            640: {
+              slidesPerView: 2, // Mostrar 2 slides en pantallas pequeñas
+            },
+            768: {
+              slidesPerView: 3, // Mostrar 3 slides en pantallas medianas
+            },
+            1024: {
+              slidesPerView: 4, // Mostrar 4 slides en pantallas grandes
+            },
+          }}
         >
           {products.map((product, index) => (
             <SwiperSlide key={index}>
