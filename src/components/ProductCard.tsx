@@ -4,7 +4,7 @@ import { ShoppingCart } from "lucide-react";
 function ProductCard({ image, name, price }: ProductCardProps) {
   return (
     <article className="cursor-grab">
-      <figure className="bg-[#f6c06e] rounded-2xl mb-2">
+      <figure className="bg-[#d2eafc] rounded-2xl mb-2">
         <img className="max-w-10/12 object-cover mx-auto" src={image} alt="" />
       </figure>
       <footer className="font-medium flex flex-col gap-2">

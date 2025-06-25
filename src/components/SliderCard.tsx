@@ -5,15 +5,15 @@ interface SliderCardProps {
 
 function SliderCard({ image, title }: SliderCardProps) {
   return (
-    <a href="#" className="bg-[#f6c06e] rounded-2xl py-3">
-      <figure className="max-w-16 md:max-w-24 mx-auto mb-2 md:mb-4">
+    <a href="#" className="bg-[#d2eafc] rounded-2xl py-3">
+      <figure className="max-w-16 md:max-w-24 mx-auto my-2 md:mb-4">
         <img
-          className="w-full object-cover"
+          className="w-full object-cover drop-shadow-lg"
           src={image}
           alt={`Icono ${title}`}
         />
       </figure>
-      <h1 className="md:text-2xl font-bold text-center">{title}</h1>
+      <h1 className="md:text-2xl font-semibold text-center">{title}</h1>
     </a>
   );
 }
