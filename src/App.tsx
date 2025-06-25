@@ -6,12 +6,14 @@ import Loading from "./components/Loading";
 import Hero from "./pages/Home/Hero";
 import SliderProducts from "./components/SliderProducts";
 import Recommended from "./components/Recommended";
+import TwoForOneBanner from "./components/TwoForOneBanner";
 
 const Home = () => (
   <Suspense fallback={<Loading />}>
     <Hero />
     <SliderProducts />
     <Recommended />
+    <TwoForOneBanner />
   </Suspense>
 );
 
