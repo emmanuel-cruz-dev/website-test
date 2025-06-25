@@ -5,7 +5,7 @@ import { products } from "../data/products";
 
 function Recommended() {
   return (
-    <section className="lg:py-6 px-2 max-w-2xl mx-auto pb-6">
+    <section className="lg:py-6 px-4 max-w-2xl mx-auto pb-6">
       <h1 className="text-lg font-semibold mb-2">Recomendados</h1>
       <main>
         <Swiper
