@@ -11,6 +11,9 @@ function SliderCard({ image, title }: SliderCardProps) {
           className="w-full object-cover drop-shadow-lg"
           src={image}
           alt={`Icono ${title}`}
+          width={600}
+          height={600}
+          loading="lazy"
         />
       </figure>
       <h1 className="md:text-2xl font-semibold text-center">{title}</h1>

@@ -9,6 +9,9 @@ function Hero() {
             className="w-full object-cover"
             src={CocaColaImg}
             alt="Botella de Coca Cola"
+            width={550}
+            height={550}
+            loading="lazy"
           />
         </figure>
         <h1 className="text-3xl font-extrabold w-10/12">

@@ -10,6 +10,9 @@ function TwoForOneBanner() {
             className="w-full object-cover"
             src={GalletitasImg}
             alt="Botella de Coca Cola"
+            width={550}
+            height={550}
+            loading="lazy"
           />
         </figure>
       </article>
