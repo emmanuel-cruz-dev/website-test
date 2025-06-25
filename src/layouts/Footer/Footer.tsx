@@ -1,10 +1,10 @@
-import { House, Search, ShoppingCart, User } from "lucide-react";
+import { House, Search, ShoppingCart } from "lucide-react";
 
 function Footer() {
   return (
     <footer className="footer p-4 pb-2 max-w-2xl mx-auto" id="footer">
       <ul
-        className="flex justify-around items-center bg-white rounded-2xl p-4"
+        className="flex justify-between items-center bg-white rounded-2xl p-4 px-10"
         style={{
           boxShadow: "0 4px 16px rgba(0, 0, 0, 0.25)",
         }}
@@ -22,11 +22,6 @@ function Footer() {
         <li>
           <a href="#">
             <ShoppingCart />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <User />
           </a>
         </li>
       </ul>
