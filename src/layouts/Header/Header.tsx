@@ -4,11 +4,11 @@ import LogoKramer from "../../assets/logo-kramer.png";
 
 function Header() {
   return (
-    <header className="header p-4 py-2 md:px-10 text-lg font-semibold shadow-2xl">
+    <header className="header p-4 py-2 md:px-10 text-lg font-semibold">
       <div className="flex justify-between items-center max-w-2xl mx-auto">
         <Link to="/" className="flex items-center gap-2 z-10" title="Inicio">
           <img
-            className="max-w-18 object-cover"
+            className="max-w-22 object-cover"
             src={LogoKramer}
             alt=""
             width={600}
