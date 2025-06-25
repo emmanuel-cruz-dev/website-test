@@ -1,5 +1,11 @@
 export interface ProductCardProps {
-  image: string;
   name: string;
+  description: string;
+  weight: string;
+  brand: string;
   price: number;
+  stock: number;
+  image: string;
+  category: string;
+  promotion: boolean;
 }
