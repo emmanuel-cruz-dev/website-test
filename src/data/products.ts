@@ -8,7 +8,7 @@ export const products = [
     stock: 25,
     image: "coca-cola.png",
     category: "Bebidas",
-    promotion: null,
+    promotion: false,
   },
   {
     name: "Cofler",
@@ -20,7 +20,7 @@ export const products = [
     stock: 45,
     image: "cofler-tofi.png",
     category: "Kiosco",
-    promotion: "2x1",
+    promotion: true,
   },
   {
     name: "Lays",
@@ -31,7 +31,7 @@ export const products = [
     stock: 30,
     image: "lays.png",
     category: "Kiosco",
-    promotion: null,
+    promotion: false,
   },
   {
     name: "Mini torta",
@@ -42,7 +42,7 @@ export const products = [
     stock: 20,
     image: "minitorta-aguila.png",
     category: "Kiosco",
-    promotion: "15% descuento",
+    promotion: false,
   },
   {
     name: "Surtido",
@@ -54,6 +54,6 @@ export const products = [
     stock: 15,
     image: "bagley.png",
     category: "Almacen",
-    promotion: null,
+    promotion: false,
   },
 ];
