@@ -1,17 +1,17 @@
 export const products = [
   {
-    name: "Pepsi Black",
+    name: "Coca Cola",
     description: "Bebida cola sin azúcar con sabor intenso y refrescante",
     weight: "1.5L",
     brand: "Pepsi",
     price: 180.0,
     stock: 25,
-    image: "pepsi.png",
+    image: "coca-cola.png",
     category: "Bebidas",
     promotion: null,
   },
   {
-    name: "Cofler Tofi Relleno Dulce de Leche",
+    name: "Cofler",
     description:
       "Chocolate con cobertura de chocolate negro relleno de dulce de leche cremoso",
     weight: "38g",
@@ -23,7 +23,7 @@ export const products = [
     promotion: "2x1",
   },
   {
-    name: "Lay's Clásicas",
+    name: "Lays",
     description: "Papas fritas clásicas con sal, crujientes y doradas",
     weight: "150g",
     brand: "Lay's",
@@ -34,7 +34,7 @@ export const products = [
     promotion: null,
   },
   {
-    name: "Águila Minitorta Blanco",
+    name: "Mini torta",
     description: "Bizcochuelo esponjoso cubierto con chocolate blanco",
     weight: "50g",
     brand: "Águila",
@@ -45,7 +45,7 @@ export const products = [
     promotion: "15% descuento",
   },
   {
-    name: "Surtido Bagley",
+    name: "Surtido",
     description:
       "Mix de galletitas dulces surtidas con diferentes sabores y coberturas",
     weight: "400g",
