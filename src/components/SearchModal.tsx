@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Search, X, ShoppingCart } from "lucide-react";
 import { products } from "../data/products";
-import { ProductCardProps } from "@/types/types";
+import { ProductCardProps } from "../types/types";
 
 const SearchModal = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -78,12 +78,12 @@ const SearchModal = () => {
   };
 
   return (
-    <>
+    <section className="lg:py-6 px-4 max-w-2xl mx-auto pb-6">
       {/* Input de búsqueda principal */}
       <article className="relative w-full max-w-md mx-auto mb-6">
         <div
           onClick={openModal}
-          className="flex items-center w-full px-4 py-3 bg-white border-2 border-pink-300 rounded-full cursor-pointer hover:border-pink-400 transition-colors"
+          className="flex items-center w-full px-4 py-3 bg-white border-2 border-neutral-300 rounded-full"
         >
           <Search className="w-5 h-5 text-gray-400 mr-3" />
           <span className="text-gray-500 flex-1 text-left">
@@ -95,7 +95,7 @@ const SearchModal = () => {
 
       {/* Modal de búsqueda */}
       {isOpen && (
-        <article className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center pt-4 px-4">
+        <article className="fixed inset-0 bg-black/40 bg-opacity-50 z-50 flex items-start justify-center pt-4 px-4">
           <div
             ref={modalRef}
             className="bg-white rounded-lg w-full max-w-2xl max-h-[90vh] overflow-hidden shadow-2xl"
@@ -115,7 +115,7 @@ const SearchModal = () => {
               </div>
               <button
                 onClick={closeModal}
-                className="ml-4 p-2 hover:bg-gray-100 rounded-full transition-colors"
+                className="ml-4 p-2 hover:bg-gray-100 rounded-full transition-colors cursor-pointer"
               >
                 <X className="w-5 h-5 text-gray-500" />
               </button>
@@ -133,35 +133,37 @@ const SearchModal = () => {
                   <p>No se encontraron productos para "{searchTerm}"</p>
                 </div>
               ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <article>
                   {filteredProducts.map((product) => (
                     <div
                       key={product.id}
-                      className="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                      className="flex justify-center items-center gap-4 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                     >
-                      <img
-                        src={product.image}
-                        className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-2xl mr-3"
-                      />
+                      <figure className="w-24 h-24 bg-[#d2eafc] rounded-2xl p-3">
+                        <img
+                          src={product.image}
+                          className="w-full object-cover"
+                        />
+                      </figure>
 
-                      <div className="flex-1">
+                      <aside className="flex flex-col gap-1">
                         <h3 className="font-semibold text-gray-800">
                           {product.name}
                         </h3>
-                        <p className="font-bold text-gray-900">
+                        <p className="text-lg font-bold text-gray-900">
                           ${product.price}
                         </p>
-                      </div>
-                      <button
-                        onClick={() => handleAddToCart(product)}
-                        className="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg transition-colors flex items-center"
-                      >
-                        <ShoppingCart className="w-4 h-4 mr-1" />
-                        <span className="text-sm">Agregar</span>
-                      </button>
+                        <button
+                          onClick={() => handleAddToCart(product)}
+                          className="flex items-center gap-2 text-sm bg-[#8de68a] hover:bg-[#7ace77] px-6 py-2 rounded-full transition-colors cursor-pointer"
+                        >
+                          <ShoppingCart />
+                          Agregar
+                        </button>
+                      </aside>
                     </div>
                   ))}
-                </div>
+                </article>
               )}
             </main>
 
@@ -178,7 +180,7 @@ const SearchModal = () => {
           </div>
         </article>
       )}
-    </>
+    </section>
   );
 };
 
