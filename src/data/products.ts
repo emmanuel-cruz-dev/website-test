@@ -1,5 +1,6 @@
 export const products = [
   {
+    id: "1",
     name: "Coca Cola",
     description: "Bebida cola sin azúcar con sabor intenso y refrescante",
     weight: "1.5L",
@@ -11,6 +12,7 @@ export const products = [
     promotion: false,
   },
   {
+    id: "2",
     name: "Cofler",
     description:
       "Chocolate con cobertura de chocolate negro relleno de dulce de leche cremoso",
@@ -23,6 +25,7 @@ export const products = [
     promotion: true,
   },
   {
+    id: "3",
     name: "Lays",
     description: "Papas fritas clásicas con sal, crujientes y doradas",
     weight: "150g",
@@ -34,6 +37,7 @@ export const products = [
     promotion: false,
   },
   {
+    id: "4",
     name: "Mini torta",
     description: "Bizcochuelo esponjoso cubierto con chocolate blanco",
     weight: "50g",
@@ -45,6 +49,7 @@ export const products = [
     promotion: false,
   },
   {
+    id: "5",
     name: "Surtido",
     description:
       "Mix de galletitas dulces surtidas con diferentes sabores y coberturas",
