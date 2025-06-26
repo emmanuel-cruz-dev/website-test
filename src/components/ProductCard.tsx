@@ -15,9 +15,9 @@ function ProductCard({ image, name, price, description }: ProductCardProps) {
         />
       </div>
       <footer className="font-medium flex flex-col gap-2">
-        <h2 className="text-xl">{name}</h2>
-        <p className="text-2xl">${price}</p>
-        <button className="flex text-xl gap-2 justify-center items-center py-3 bg-[#8de68a] hover:bg-[#7ace77] transition-colors duration-300 ease-in-out rounded-full cursor-pointer">
+        <h2 className="text-lg">{name}</h2>
+        <p className="text-xl">${price}</p>
+        <button className="flex text-lg gap-2 justify-center items-center py-3 bg-[#8de68a] hover:bg-[#7ace77] transition-colors duration-300 ease-in-out rounded-full cursor-pointer">
           <ShoppingCart />
           Agregar
         </button>
