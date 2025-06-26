@@ -29,3 +29,8 @@ export interface ApiProductsProps {
   status: string;
   category: ApiCategoryProps;
 }
+
+export interface SliderCardProps {
+  title: string;
+  image: string;
+}
