@@ -7,10 +7,12 @@ import Hero from "./pages/Home/Hero";
 import SliderProducts from "./components/SliderProducts";
 import Recommended from "./components/Recommended";
 import TwoForOneBanner from "./components/TwoForOneBanner";
+import SearchModal from "./components/SearchModal";
 
 const Home = () => (
   <Suspense fallback={<Loading />}>
     <Hero />
+    <SearchModal />
     <SliderProducts />
     <Recommended />
     <TwoForOneBanner />
