@@ -1,4 +1,5 @@
 export interface ProductCardProps {
+  id: string;
   name: string;
   description: string;
   weight: string;
