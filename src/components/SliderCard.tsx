@@ -1,7 +1,4 @@
-interface SliderCardProps {
-  title: string;
-  image: string;
-}
+import { SliderCardProps } from "../types/types";
 
 function SliderCard({ image, title }: SliderCardProps) {
   return (
