@@ -1,3 +1,5 @@
+import { RefObject } from "react";
+
 interface ApiCategoryProps {
   id: string;
   name: string;
@@ -20,4 +22,10 @@ export interface ApiProductsProps {
 export interface SliderCardProps {
   title: string;
   image: string;
+}
+
+export interface ModalItemProps {
+  modalRef: RefObject<HTMLDivElement | null>;
+  inputRef: RefObject<HTMLInputElement | null>;
+  closeModal: () => void;
 }
