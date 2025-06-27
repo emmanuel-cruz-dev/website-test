@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import { Search, X, ShoppingCart } from "lucide-react";
 import { products } from "../data/products";
-import { ProductCardProps } from "../types/types";
+import { ApiProductsProps } from "../types/types";
 
 const SearchModal = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredProducts, setFilteredProducts] = useState<ProductCardProps[]>(
+  const [filteredProducts, setFilteredProducts] = useState<ApiProductsProps[]>(
     []
   );
   const inputRef = useRef<HTMLInputElement>(null);
@@ -20,7 +20,9 @@ const SearchModal = () => {
       const filtered = products.filter(
         (producto) =>
           producto.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          producto.category.toLowerCase().includes(searchTerm.toLowerCase())
+          producto.category.name
+            .toLowerCase()
+            .includes(searchTerm.toLowerCase())
       );
       setFilteredProducts(filtered);
     }
@@ -72,7 +74,7 @@ const SearchModal = () => {
     setFilteredProducts([]);
   };
 
-  const handleAddToCart = (product: ProductCardProps) => {
+  const handleAddToCart = (product: ApiProductsProps) => {
     console.log("Agregado al carrito:", product);
     // TODO implementar lógica para agregar al carrito
   };
@@ -141,7 +143,7 @@ const SearchModal = () => {
                     >
                       <figure className="w-24 h-24 bg-[#d2eafc] rounded-2xl p-3">
                         <img
-                          src={product.image}
+                          src={product.image ?? ""}
                           className="w-full object-cover"
                         />
                       </figure>
