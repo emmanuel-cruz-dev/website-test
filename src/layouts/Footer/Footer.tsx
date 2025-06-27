@@ -12,9 +12,9 @@ function Footer() {
             </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/busqueda">
               <Search />
-            </a>
+            </Link>
           </li>
           <li>
             <Link to="/carrito">
