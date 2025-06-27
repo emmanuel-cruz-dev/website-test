@@ -1,5 +1,5 @@
 function SnacksItem() {
-  return <div>SnacksItem</div>;
+  return <div>Snacks Page</div>;
 }
 
 export default SnacksItem;
