@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ShoppingCart } from "lucide-react";
+import { BadgePercent } from "lucide-react";
 import LogoKramer from "../../assets/logo-kramer.png";
 
 function Header() {
@@ -16,7 +16,7 @@ function Header() {
           />
         </Link>
         <button className="cursor-pointer">
-          <ShoppingCart />
+          <BadgePercent />
         </button>
       </div>
     </header>
