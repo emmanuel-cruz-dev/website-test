@@ -1,16 +1,3 @@
-export interface ProductCardProps {
-  id: string;
-  name: string;
-  description: string;
-  weight: string;
-  brand: string;
-  price: number;
-  stock: number;
-  image: string;
-  category: string;
-  promotion: boolean;
-}
-
 interface ApiCategoryProps {
   id: string;
   name: string;
