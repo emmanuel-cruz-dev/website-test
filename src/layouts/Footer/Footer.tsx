@@ -1,4 +1,5 @@
 import { House, Search, ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -6,9 +7,9 @@ function Footer() {
       <article className="p-[5px] rounded-2xl bg-gradient-to-r from-[#dff3fd] via-[#f5f6f6] to-[#fdf1ea]">
         <ul className="flex justify-between items-center bg-white rounded-xl p-4 px-10">
           <li>
-            <a href="#">
+            <Link to="/" title="Inicio">
               <House />
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#">
