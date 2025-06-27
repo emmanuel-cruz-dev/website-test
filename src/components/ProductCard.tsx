@@ -3,7 +3,7 @@ import { ApiProductsProps } from "../types/types";
 
 function ProductCard({ image, name, price, description }: ApiProductsProps) {
   return (
-    <article className="cursor-grab">
+    <article>
       <div className="bg-[#d2eafc] rounded-2xl mb-2 p-8">
         <img
           className="max-w-10/12 object-cover mx-auto drop-shadow-xl"
