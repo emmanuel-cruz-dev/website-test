@@ -1,10 +1,11 @@
 import { Suspense } from "react";
 import Loading from "../components/Loading";
-import SnacksItem from "../pages/SnacksPage/SnacksItem";
+import CategoryBanner from "../components/CategoryBanner";
+import SnacksBanner from "../assets/snacks-banner.png";
 
 const SnacksPage = () => (
   <Suspense fallback={<Loading />}>
-    <SnacksItem />
+    <CategoryBanner title="Snacks" image={SnacksBanner} />
   </Suspense>
 );
 
