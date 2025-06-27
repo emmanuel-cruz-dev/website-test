@@ -19,9 +19,10 @@ export interface ApiProductsProps {
   category: ApiCategoryProps;
 }
 
-export interface SliderCardProps {
+export interface NavigationCardProps {
   title: string;
   image: string;
+  link: string;
 }
 
 export interface ModalItemProps {
