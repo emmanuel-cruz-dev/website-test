@@ -1,13 +1,13 @@
-import { ProductCardProps } from "@/types/types";
 import { ShoppingCart } from "lucide-react";
+import { ApiProductsProps } from "../types/types";
 
-function ProductCard({ image, name, price, description }: ProductCardProps) {
+function ProductCard({ image, name, price, description }: ApiProductsProps) {
   return (
     <article className="cursor-grab">
       <div className="bg-[#d2eafc] rounded-2xl mb-2 p-8">
         <img
           className="max-w-10/12 object-cover mx-auto drop-shadow-xl"
-          src={image}
+          src={image ?? ""}
           alt={description}
           width={500}
           height={500}
