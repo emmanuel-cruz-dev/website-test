@@ -17,9 +17,9 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <Link to="/carrito">
               <ShoppingCart />
-            </a>
+            </Link>
           </li>
         </ul>
       </article>
