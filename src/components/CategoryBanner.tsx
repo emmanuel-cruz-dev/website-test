@@ -1,7 +1,4 @@
-interface CategoryBannerProps {
-  image: string;
-  title: string;
-}
+import { CategoryBannerProps } from "../types/types";
 
 function CategoryBanner({ image, title }: CategoryBannerProps) {
   return (
