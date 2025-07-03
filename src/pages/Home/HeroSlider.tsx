@@ -2,6 +2,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import TwoForOneBanner from "../../components/TwoForOneBanner";
 import Hero from "../../components/Hero";
+import CategoryBanner from "../../components/CategoryBanner";
+import BebidasBanner from "../../assets/bebidas-banner.png";
+import LimpiezaBanner from "../../assets/limpieza-banner.png";
+import SnacksBanner from "../../assets/snacks-banner.png";
 
 function HeroSlider() {
   return (
@@ -12,7 +16,7 @@ function HeroSlider() {
         slidesPerView={1}
         loop={true}
         autoplay={{
-          delay: 5000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
       >
@@ -23,10 +27,13 @@ function HeroSlider() {
           <TwoForOneBanner />
         </SwiperSlide>
         <SwiperSlide>
-          <Hero />
+          <CategoryBanner title="Bebidas" image={BebidasBanner} />
         </SwiperSlide>
         <SwiperSlide>
-          <TwoForOneBanner />
+          <CategoryBanner title="Limpieza" image={LimpiezaBanner} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CategoryBanner title="Snacks" image={SnacksBanner} />
         </SwiperSlide>
       </Swiper>
     </section>
