@@ -30,3 +30,8 @@ export interface ModalItemProps {
   inputRef: RefObject<HTMLInputElement | null>;
   closeModal: () => void;
 }
+
+export interface CategoryBannerProps {
+  image: string;
+  title: string;
+}
