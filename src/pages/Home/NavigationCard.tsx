@@ -3,7 +3,11 @@ import { NavigationCardProps } from "../../types/types";
 
 function NavigationCard({ image, title, link }: NavigationCardProps) {
   return (
-    <Link to={link} className="block bg-[#d2eafc] rounded-2xl py-3">
+    <Link
+      to={link}
+      className="block bg-[#d2eafc] rounded-2xl py-3"
+      title={`Ir a ${title}`}
+    >
       <figure className="max-w-16 md:max-w-24 mx-auto my-2 md:mb-4">
         <img
           className="w-full object-cover drop-shadow-lg"
