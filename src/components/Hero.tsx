@@ -1,4 +1,4 @@
-import CocaColaImg from "../assets/coca-cola.png";
+import CocaColaImg from "../assets/coca-cola.avif";
 
 function Hero() {
   return (

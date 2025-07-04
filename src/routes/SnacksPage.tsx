@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import Loading from "../components/Loading";
 import CategoryBanner from "../components/CategoryBanner";
-import SnacksBanner from "../assets/snacks-banner.png";
+import SnacksBanner from "../assets/snacks-banner.avif";
 
 const SnacksPage = () => (
   <Suspense fallback={<Loading />}>

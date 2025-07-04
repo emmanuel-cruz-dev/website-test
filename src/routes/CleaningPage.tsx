@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import Loading from "../components/Loading";
 import CategoryBanner from "../components/CategoryBanner";
-import LimpiezaBanner from "../assets/limpieza-banner.png";
+import LimpiezaBanner from "../assets/limpieza-banner.avif";
 
 const CleaningPage = () => (
   <Suspense fallback={<Loading />}>

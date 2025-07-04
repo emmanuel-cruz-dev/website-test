@@ -1,4 +1,4 @@
-import GalletitasImg from "../assets/galletitas.png";
+import GalletitasImg from "../assets/galletitas.avif";
 
 function TwoForOneBanner() {
   return (

@@ -3,9 +3,9 @@ import { Autoplay } from "swiper/modules";
 import TwoForOneBanner from "../../components/TwoForOneBanner";
 import Hero from "../../components/Hero";
 import CategoryBanner from "../../components/CategoryBanner";
-import BebidasBanner from "../../assets/bebidas-banner.png";
-import LimpiezaBanner from "../../assets/limpieza-banner.png";
-import SnacksBanner from "../../assets/snacks-banner.png";
+import BebidasBanner from "../../assets/bebidas-banner.avif";
+import LimpiezaBanner from "../../assets/limpieza-banner.avif";
+import SnacksBanner from "../../assets/snacks-banner.avif";
 
 function HeroSlider() {
   return (

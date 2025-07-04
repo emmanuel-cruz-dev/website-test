@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { BadgePercent } from "lucide-react";
-import LogoKramer from "../../assets/logo-kramer.png";
+import LogoKramer from "../../assets/logo-kramer.avif";
 
 function Header() {
   return (

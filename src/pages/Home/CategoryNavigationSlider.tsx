@@ -1,14 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import NavigationCard from "./NavigationCard";
-import SnacksImg from "../../assets/snacks-icon.png";
-import LacteosImg from "../../assets/bebidas-icon.png";
-import LimpiezaImg from "../../assets/limpieza-icon.png";
-import AlmacenImg from "../../assets/almacen-icon.png";
-import PanaderiaImg from "../../assets/panaderia-icon.png";
-import FiambreriaImg from "../../assets/fiambreria-icon.png";
-import LibreriaImg from "../../assets/libreria-icon.png";
-import RegaleriaImg from "../../assets/regaleria-icon.png";
+import SnacksImg from "../../assets/snacks-icon.avif";
+import LacteosImg from "../../assets/bebidas-icon.avif";
+import LimpiezaImg from "../../assets/limpieza-icon.avif";
+import AlmacenImg from "../../assets/almacen-icon.avif";
+import PanaderiaImg from "../../assets/panaderia-icon.avif";
+import FiambreriaImg from "../../assets/fiambreria-icon.avif";
+import LibreriaImg from "../../assets/libreria-icon.avif";
+import RegaleriaImg from "../../assets/regaleria-icon.avif";
 
 function CategoryNavigationSlider() {
   return (
