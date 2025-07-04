@@ -7,7 +7,7 @@ function Footer() {
   return (
     <>
       <footer
-        className="fixed bottom-0 z-10 footer p-4 pb-2 max-w-2xl mx-auto w-full"
+        className="fixed bottom-0 left-0 right-0 mx-auto z-10 p-4 pb-2 max-w-2xl w-full"
         id="footer"
       >
         <nav className="p-[5px] rounded-2xl bg-gradient-to-r from-[#dff3fd] via-[#f5f6f6] to-[#fdf1ea]">
