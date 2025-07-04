@@ -15,7 +15,10 @@ function Header() {
             height={279}
           />
         </Link>
-        <button className="flex flex-col items-center cursor-pointer">
+        <button
+          className="flex flex-col items-center cursor-pointer"
+          title="Ver promociones"
+        >
           <BadgePercent size={18} />
           <span className="text-xs">Promos</span>
         </button>
