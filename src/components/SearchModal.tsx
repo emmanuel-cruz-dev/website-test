@@ -54,7 +54,7 @@ const SearchModal = () => {
   return (
     <section className="lg:py-6 px-4 max-w-2xl mx-auto pb-6">
       {/* Input de búsqueda principal */}
-      <article className="relative w-full max-w-md mx-auto mb-6">
+      <article className="relative w-full mx-auto mb-6">
         <div
           onClick={openModal}
           className="flex items-center w-full px-4 py-3 bg-white border-2 border-neutral-300 rounded-full cursor-text"
