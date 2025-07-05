@@ -1,4 +1,4 @@
-# E-commerce
+# E-commerce template
 Test template E-commerce.
 
 ## Tecnologías utilizadas
@@ -6,5 +6,3 @@ Test template E-commerce.
 - React
 - TypeScript
 - Tailwind CSS
-- Sass
-- Git y GitHub
